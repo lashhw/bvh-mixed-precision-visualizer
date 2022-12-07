@@ -12,7 +12,7 @@ using Vector3 = bvh::Vector3<float>;
 using Triangle = bvh::Triangle<float>;
 using Bvh = bvh::Bvh<float>;
 using Ray = bvh::Ray<float>;
-using TraverserHigh = bvh::SingleRayTraverser<Bvh, 64, bvh::MPNodeIntersector<Bvh, 23, 8>>;
+using TraverserHigh = bvh::SingleRayTraverser<Bvh>;
 using TraverserLow = bvh::SingleRayTraverser<Bvh, 64, bvh::MPNodeIntersector<Bvh, 7, 8>>;
 using PrimitiveIntersector = bvh::ClosestPrimitiveIntersector<Bvh, Triangle>;
 
